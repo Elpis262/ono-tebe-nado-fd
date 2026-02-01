@@ -1,7 +1,6 @@
 name: Яндекс.Практикум Тесты
 
-on: [push]  # ← ВОТ ЭТО ДОБАВЬТЕ!
-
+on: [push] 
 jobs:
   test:
     runs-on: ubuntu-latest
