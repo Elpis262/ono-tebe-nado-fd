@@ -1,8 +1,15 @@
+.main{
+    width: 1100px;
+    height: 100%;
+}
+
 .header{
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items:center;
     padding: 92px 50px 96px;
+    width: 1100px;
+    box-sizing: border-box;
 }
 
 .content-section{
@@ -20,6 +27,7 @@
     display: flex;
     gap: 32px;
     list-style: circle;
+    padding-left: 0;
 }
 
 .header__link{
@@ -35,10 +43,12 @@
     color: black;
 }
 
+.header_menu_list li:first-child{
+    list-style: none;
+}
+
 .header_logo{
     display: block;
-    justify-self: center;
-    align-self: center;
     width: 148px;
 }
 
@@ -54,10 +64,12 @@
 .header__adress{
     justify-self: end;
     font-style: italic;
+    padding-right: 54px;
+    padding-bottom: 6px;
 }
 
 .adress-item{
-     display: block;
+    display: block;
     font-size: 18px;
     line-height: 1.35;
     text-underline-position: under;
@@ -67,11 +79,10 @@
 
 .cover{
     position: relative;
-    padding: 165px 50px 50px 50px;
     background-image: url(../images/lotus-flower.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 757px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,20 +93,23 @@
     z-index: 0;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1100px;
+    height: 757px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .card_title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    position: relative;
     z-index: 1;
     color: white;
-    margin: 0;
-    padding-top: 10px;
+    padding-top: 165px;
+    letter-spacing: 30px;
 }
 
 .alignet-text {
@@ -113,56 +127,60 @@
 
 .alignet-text-right {
     text-align: right;
-    padding-right: 50px;
+    padding-right: 20px;
+
+    
 }
+
+
 
 .description {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    position: relative;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     z-index: 1;
     color: white;
-    margin-top: auto;
-    align-items: baseline;
-    padding-left: 50px;
+    padding: 0 50px 45px 30px;
+    letter-spacing: 0;
 }
+
 
 .card-text {
     font-size: 22px;
     line-height: 28px;
-    width: 500;
     color: white;
     margin-left: 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
     word-spacing: 20px;
-    font-style: regular;
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
     position: relative;
     z-index: 1;
     background-color: transparent;
     border: 1px solid white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
     color: white;
     width: 256px;
     height: 51px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 28px;
-    width: 500;
+    box-sizing: border-box;
+    padding: 10px 0;
+
+
 }
 
 .lots{
-    padding: 180px 50px 0;
-    margin: 0 auto;
-    max-width: 1440px;
+    padding: 75px 0 0 0;
 }
 
 .lots__heading{
-    text-decoration: underline;
+    text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
     padding-top: 100px;
@@ -174,31 +192,38 @@
 .lots__card-list{
     display: grid;
     grid-template-columns: repeat(3, 334px);
-    grid-template-rows: repeat(1, 596px);
+    height: 596px;
     column-gap: 24px;
-    list-style: none;
-    justify-content: center;
     margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .lots__card-list-item{
-    position: relative;
+    height: 596px;
+    list-style: none;
 }
 
 .card-link{
     display: block;
     height: 100%;
+    text-decoration: none;
+    
 }
 
 .card{
     position: relative;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-self: center;
-    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: auto;
     height: 100%;
-    padding: 48px 40px;
+    padding-top: 27px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    
 }
 
 .card_type_film{
@@ -225,10 +250,12 @@
     z-index: 1;
     color: #FFFFFF;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 120%;
     text-decoration: underline;
     text-transform: uppercase;
+    margin: 25px 0 0 0;
+    padding: 0 40px;
 }
 
 .card__text{
@@ -237,8 +264,8 @@
     color: #FFFFFF;
     font-size: 20px;
     line-height: 120%;
-    text-decoration: none;
-   
+    margin: 0 0 48px 0;
+    padding: 0 40px;
 
 }
 
@@ -247,15 +274,17 @@
   font-size: 20px;
   text-decoration-line: underline;
   text-underline-position: under;
-  padding-top: 130px;
+  padding-top: 30px;
   padding-left: 64px;
 }
 
 .about{
     display: grid;
-    grid-template-columns: 334px 1fr;
-    gap: 24px;
-    padding: 180px 50px;
+    grid-template-columns: 240px 2fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 155px 70px;
+    width: 1052px;
+    height: 596px;
 }
 
 .about_column{
@@ -271,7 +300,6 @@
     height: 240px;
     border-radius: 50%;
     background-color: black;
-    
 }
 
 .about_logo-image{
@@ -280,28 +308,41 @@
 }
 
 .about_title{
-    padding: 100px 0 104px;
+    padding: 80px 0 104px ;
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
+    padding-left: 73px;
+    padding-top: 105px;
 }
 
 .about_text{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 73px;
 }
 
 .footer{
     display: flex;
     justify-content: space-between;
-    padding: 180px 50px 80px;
+    padding: 0 50px;
+    padding-bottom: 122px;
+    width: 1100px;
+    height: 180px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .footer_menu_list{
     text-align: center;
     list-style: none;
+    padding-bottom: 18px;
+    padding-left:  26px;
     
 }
 
@@ -311,7 +352,6 @@
     line-height: 100%;
     text-underline-position: under;
     text-decoration: underline;
-    
 }
 
 .footer__menu-link_active{
@@ -322,6 +362,9 @@
     display: flex;
     gap: 48px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 25px;
 }
 
 .footer__social-icon{
@@ -329,3 +372,6 @@
     height: 48px;
 }
 
+.adress_footer{
+    padding-top: 16px;
+}
