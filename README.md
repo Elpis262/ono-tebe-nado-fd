@@ -1,1 +1,1 @@
-https://github.com/Elpis262/ono-tebe-nado-fd-1
+https://github.com/Elpis262/ono-tebe-nado-fd
